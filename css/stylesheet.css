@@ -343,6 +343,10 @@
   }
 }
 
+
+
+
+
 /* for small/med displays */
 @media (max-width: 500px) {
   .navigation {
@@ -419,8 +423,26 @@
 
 
 
-/* for smaller displays (iphone 6 ect) */
+/* for smaller displays (iphone 6 or smaller) */
 @media (max-width: 320px) {
+  .navigation {
+    /* We change from row to column on smaller displays*/
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .navigation a{
+    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+    border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+    border-top: none;
+  }
+  .navigation a:hover{
+    /* We change from row to column on smaller displays*/
+    flex-direction: column;
+    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+    border-top: none;/*Switches off top border when width of device is above 500px*/
+    border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
+  }
 
 }
 
