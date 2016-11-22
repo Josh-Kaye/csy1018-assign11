@@ -152,12 +152,16 @@
     width: 33%;
     background-color: #d4d4d4;
   }
-  .ul-work-experiance-tgr{
-    list-style: none;
-    flex-grow: 1;
+  .wrapper-work-experiance{
+   display: flex;
+   align-self: flex-start;
+   flex-wrap: wrap;
+   width:250px;
   }
   .li-work-experiance-tgr{
+    margin-left: -20px;
     color: #464646;
+    list-style: none;
     margin-top: 2%;
     font-family: 'ABeeZee', sans-serif;
     font-weight: bold;
@@ -200,18 +204,18 @@
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
+
   .work-experiance-heading{
     margin-left: 8%;
     font-size: 2em;
     margin-right: 2%;
     width: 10%;
   }/*The Green Room END!!*/
-
-  .ul-work-experiance-behance-v1{
-    list-style: none;
-  }
   .li-work-experiance-behance-v1{
+    margin-left: -20px;
     color: #464646;
+    flex-wrap: wrap;
+    list-style: none;
     margin-top: 2%;
     font-family: 'ABeeZee', sans-serif;
     font-weight: bold;
@@ -261,28 +265,60 @@
     width: 10%;
   }/*behance-v1 END!!*/
 
-  .wrapper-work-experiance{
-   display: flex;
-   justify-content: flex-start;
-   margin-left: -50px;
+  .li-work-experiance-behance-v2{
+    margin-left: -20px;
+    color: #464646;
+    list-style: none;
+    margin-top: 2%;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
   }
+  .work-experiance-heading-behance-v2{
+    display: inline-flex;
+  }
+  .button-article-behance-v2{
+    background-color: #46c7ed;
+    color: black;
+    border-radius: 5px;
+    border: 5px solid #46c7ed; /* Green */
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .button-article-behance-v2{
+    background-color: #46c7ed;
+    color: white;
+    border: 2px solid #46c7ed;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .button-article-behance-v2:hover{
+    background-color: #f8f8f8;
+    color: black;
+    border: 2px solid #46c7ed;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .work-experiance-behance-v2{
+    margin-left: 8%;
+    font-size: 2em;
+    margin-right: 2%;
+    width: 10%;
+  }/*behance-v2 END!!*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*article right start*/
   .article-right{
     flex-grow: 1;
     width: 33%;
@@ -365,15 +401,86 @@
     height: 100%;
   }/*education-container-end*/
   .article-middle{
-
+    display: flex;
     margin-top: 5%;
     width: 100%;
     height: 100%;
   }
-  .ul-work-experiance-tgr{
+  /*work-experiance-end*/
+  .article-right{
+    flex-grow: 1;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
   }
-  .work-experiance-heading-one{
-    font-size: 1.5em;
+}
+
+
+
+
+
+/* for smaller displays */
+@media (max-width: 380px) {
+  .navigation {
+    /* We change from row to column on smaller displays*/
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .navigation a{
+    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+    border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+    border-top: none;
+  }
+  .navigation a:hover{
+    /* We change from row to column on smaller displays*/
+    flex-direction: column;
+    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+    border-top: none;/*Switches off top border when width of device is above 500px*/
+    border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
+  }
+  .container-items{
+    display: flex;
+    align-self: center;
+    font-size: 0.9em;
+    margin-left: 3%;
+    width: 85%;
+    margin-top:20%;
+    height: 600px;
+  }
+/*container one end!*/
+  .container-two-jk{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-size: 0.7em;
+    max-width: 100%;
+    align-content: center;
+    margin-top: 100px;
+  }
+  .continer-one-image{
+    margin-top: -60px;
+    max-width: 100%;
+    align-self: center;
+  }
+  .main-wrapper{/*container*/
+    margin-top: -32px;
+    height: 1000px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+  }
+  .article-left{
+    margin-top: -20px;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+  }/*education-container-end*/
+  .article-middle{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
   }
   /*work-experiance-end*/
   .article-right{
