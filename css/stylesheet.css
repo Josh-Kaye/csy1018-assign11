@@ -348,7 +348,7 @@
 
 
 /* for small/med displays */
-@media (max-width: 500px) {
+@media (max-width: 460px) {
   .navigation {
     /* We change from row to column on smaller displays*/
     flex-direction: column;
