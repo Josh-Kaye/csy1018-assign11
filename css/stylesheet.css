@@ -349,9 +349,76 @@
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navigation {
+      /* We change from row to column on smaller displays*/
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .navigation a{
+      margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+      border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+      border-top: none;
+    }
+    .navigation a:hover{
+      /* We change from row to column on smaller displays*/
+      flex-direction: column;
+      margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+      border-top: none;/*Switches off top border when width of device is above 500px*/
+      border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
+    }
+    .container-items{
+      display: flex;
+      align-self: center;
+      font-size: 0.9em;
+      margin-left: 3%;
+      width: 85%;
+      margin-top:20%;
+      height: 600px;
+    }
+  /*container one end!*/
+    .container-two-jk{
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      font-size: 0.7em;
+      max-width: 100%;
+      align-content: center;
+      margin-top: 100px;
+    }
+    .continer-one-image{
+      margin-top: -60px;
+      max-width: 100%;
+      align-self: center;
+    }
+    .main-wrapper{/*container*/
+      margin-top: -32px;
+      height: 1000px;
+      flex-grow: 1;
+      display: flex;
+      flex-flow: column;
+    }
+    .article-left{
+      margin-top: -20px;
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
+    }/*education-container-end*/
+    .article-middle{
+      display: flex;
+      margin-top: 5%;
+      width: 100%;
+      height: 100%;
+    }
+    /*work-experiance-end*/
+    .article-right{
+      flex-grow: 1;
+      margin-top: 5%;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
 /* Portrait */
 @media only screen
@@ -359,81 +426,75 @@
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-
-}
-  .navigation {
-    /* We change from row to column on smaller displays*/
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    .navigation {
+      /* We change from row to column on smaller displays*/
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .navigation a{
+      margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+      border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+      border-top: none;
+    }
+    .navigation a:hover{
+      /* We change from row to column on smaller displays*/
+      flex-direction: column;
+      margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+      border-top: none;/*Switches off top border when width of device is above 500px*/
+      border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
+    }
+    .container-items{
+      display: flex;
+      align-self: center;
+      font-size: 0.9em;
+      margin-left: 3%;
+      width: 85%;
+      margin-top:20%;
+      height: 600px;
+    }
+  /*container one end!*/
+    .container-two-jk{
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      font-size: 0.7em;
+      max-width: 100%;
+      align-content: center;
+      margin-top: 100px;
+    }
+    .continer-one-image{
+      margin-top: -60px;
+      max-width: 100%;
+      align-self: center;
+    }
+    .main-wrapper{/*container*/
+      margin-top: -32px;
+      height: 1000px;
+      flex-grow: 1;
+      display: flex;
+      flex-flow: column;
+    }
+    .article-left{
+      margin-top: -20px;
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
+    }/*education-container-end*/
+    .article-middle{
+      display: flex;
+      margin-top: 5%;
+      width: 100%;
+      height: 100%;
+    }
+    /*work-experiance-end*/
+    .article-right{
+      flex-grow: 1;
+      margin-top: 5%;
+      width: 100%;
+      height: 100%;
+    }
   }
-  .navigation a{
-    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
-    border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
-    border-top: none;
-  }
-  .navigation a:hover{
-    /* We change from row to column on smaller displays*/
-    flex-direction: column;
-    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
-    border-top: none;/*Switches off top border when width of device is above 500px*/
-    border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
-  }
-  .container-items{
-    display: flex;
-    align-self: center;
-    font-size: 0.9em;
-    margin-left: 3%;
-    width: 85%;
-    margin-top:20%;
-    height: 600px;
-  }
-/*container one end!*/
-  .container-two-jk{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    font-size: 0.7em;
-    max-width: 100%;
-    align-content: center;
-    margin-top: 100px;
-  }
-  .continer-one-image{
-    margin-top: -60px;
-    max-width: 100%;
-    align-self: center;
-  }
-  .main-wrapper{/*container*/
-    margin-top: -32px;
-    height: 1000px;
-    flex-grow: 1;
-    display: flex;
-    flex-flow: column;
-  }
-  .article-left{
-    margin-top: -20px;
-    flex-grow: 1;
-    width: 100%;
-    height: 100%;
-  }/*education-container-end*/
-  .article-middle{
-    display: flex;
-    margin-top: 5%;
-    width: 100%;
-    height: 100%;
-  }
-  /*work-experiance-end*/
-  .article-right{
-    flex-grow: 1;
-    margin-top: 5%;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-
-
-
 
 /* for smaller displays (iphone 6 or smaller) */
 @media (max-width: 320px) {
