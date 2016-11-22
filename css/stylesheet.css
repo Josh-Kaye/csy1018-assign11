@@ -48,9 +48,6 @@
     display: flex;/*disply is flex*/
     flex-direction: column;/*Saying to container that we want it to displayed in a column not a row*/
     flex: 1 0 auto;/*Making the container whole width of the page*/
-    display: -moz-flex;/*display the same in broswers (firefox)*/
-    display: -ms-flexbox;/*display the same in broswers (Internet Explorer)*/
-    display: -webkit-flex; /*display the container as a flexbox element in browsers*/
     width: 100%;/*full width of set §*/
     height: 650px;/*height of container*/
     background-color: #46c7ed;/*background of the container*/
@@ -89,7 +86,7 @@
     flex-grow: 1;
     margin-right: 2%;
     width: 33%;
-    background-color: #d4d4d4;
+    background-color: #e4e4e4;
   }
   .education-heading{
     color: #161616;
@@ -150,7 +147,7 @@
     flex-grow: 1;
     margin-right: 2%;
     width: 33%;
-    background-color: #d4d4d4;
+    background-color: #e4e4e4;
   }
   .wrapper-work-experiance{
    display: flex;
@@ -322,7 +319,7 @@
   .article-right{
     flex-grow: 1;
     width: 33%;
-    background-color: #8c8e8f;
+    background-color: #e4e4e4;
 }
   .skills-heading{
     margin-left: 8%;
@@ -348,7 +345,22 @@
 
 
 /* for small/med displays */
-@media (max-width: 460px) {
+  /* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
   .navigation {
     /* We change from row to column on smaller displays*/
     flex-direction: column;
