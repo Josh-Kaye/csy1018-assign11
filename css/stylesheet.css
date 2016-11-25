@@ -362,7 +362,7 @@
  /*End of cv.html!!*/
 /*End of cv.html!*/
 
-@media (max-width: 600px){
+@media (min-width : 320px){
   .navigation{
     display: flex;
     justify-content: center;
