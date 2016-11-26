@@ -362,7 +362,9 @@
  /*End of cv.html!!*/
 /*End of cv.html!*/
 
-@media (min-width : 320px){
+
+
+@media (min-width : 320px){ 
   .navigation{
     display: flex;
     justify-content: center;
@@ -380,6 +382,10 @@
     font-size: .8em;
     width: 300px;
   }
+  .container-two-jk{
+
+
+  }
   .main-wrapper{
     display: flex;
     flex-flow: column;
@@ -389,76 +395,27 @@
   .article-left{
     margin-top: 5%;
     width: 100%;
-    height: 110%;
+    height: 100%;
   }
   .article-middle{
    margin-top: 5%;
    width: 100%;
-   height: 110%;
+   height: 100%;
   }
   .article-right{
    margin-top: 5%;
    margin-bottom: 2%;
    width: 100%;
-   height: 110%;
+   height: 100%;
   }/*End of middle conaitners*/
-  .footer{
+  .footer-container{
     display: flex;
-    width: 100%;
+    flex-grow: 1
     flex-direction: column;
     align-items: center;
-    margin-top: 150%;
-    height: 100%;
+    width: 100%;
+    margin-top: 100%;
   }
-
-  @media (max-width: 320px){
-    .navigation{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-    }
-    .container-one-jk{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-      flex-direction: row;
-    }
-    .text-cone{
-      font-size: .8em;
-      width: 300px;
-    }
-    .main-wrapper{
-      display: flex;
-      flex-flow: column;
-      height: 1000px;
-      flex-grow: 1;
-    }
-    .article-left{
-      margin-top: 5%;
-      width: 100%;
-      height: 100%;
-    }
-    .article-middle{
-     margin-top: 5%;
-     width: 100%;
-     height: 100%;
-    }
-    .article-right{
-     margin-top: 5%;
-     margin-bottom: 2%;
-     width: 100%;
-     height: 100%;
-    }/*End of middle conaitners*/
-    .footer{
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 150%;
-      height: 100%;
-    }
 
 /*Joshua Kaye csy1018 (assign1) - Stylesheet.css*/
 
