@@ -1,6 +1,9 @@
 /*joshua kaye csy1018 (assign1) - stylesheet.css*/
   body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
     display: flex;/*we want to body to have a display of flex, so flexbox cmd is used*/
+    display:-moz-box; /*making sure firefox reads the container correctly*/
+    display: -ms-flexbox;/*making sure IE reads the container correctly*/
+    display: -webkit-flex;
     flex-direction: column;/*displayng how we want the web page to be // this case a column so horzontial*/
     min-height: -100vh; /*percentage vh=Vertical and Horozontal margins*/
     margin: 0; /*Magin from top set to 0 */
@@ -21,7 +24,7 @@
     display:-moz-box; /*making sure firefox reads the container correctly*/
     display: -ms-flexbox;/*making sure IE reads the container correctly*/
     display: -webkit-flex;
-    -webkit-flex-flow:row wrap;
+
   }
   .navigation a { /*editing the style of the nav links (a tags)*/
     display: block; /*Display in block container*/
@@ -88,6 +91,9 @@
     margin-right: 2%;
     width: 33%;
     background-color: #e4e4e4;
+    -webkit-box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
+    box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
   }
   .education-heading{
     color: #161616;
@@ -149,6 +155,9 @@
     margin-right: 2%;
     width: 33%;
     background-color: #e4e4e4;
+    -webkit-box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
+    box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
   }
   .wrapper-work-experiance{
    display: flex;
@@ -321,6 +330,9 @@
     flex-grow: 1;
     width: 33%;
     background-color: #e4e4e4;
+    -webkit-box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
+    box-shadow: 10px 6px 5px -4px rgba(0,0,0,0.35);
 }
   .skills-heading{
     margin-left: 8%;
@@ -363,8 +375,8 @@
 /*End of cv.html!*/
 
 @media all and (min-width : 1224px){
-  body{
-    width: 100%;
+
+
   }
 
 
@@ -380,7 +392,7 @@
 @media only screen
   and (min-width : 320px)
   and (max-device-width: 480px)
-   and (-webkit-min-device-pixel-ratio: 2)  {
+  and (-webkit-min-device-pixel-ratio: 2){
 
   .navigation{
     display: flex;
@@ -399,32 +411,20 @@
     font-size: .8em;
     width: 300px;
   }
-  .container-two-jk{
 
-
-  }
   .main-wrapper{
     display: flex;
     flex-flow: column;
     height: 1000px;
     flex-grow: 1;
   }
-  .article-left{
-    margin-top: 5%;
-    width: 100%;
-    height: 100%;
-  }
-  .article-middle{
+  .article-middle .middle .article-right{
    margin-top: 5%;
    width: 100%;
    height: 100%;
+   font-size: 1.5
   }
-  .article-right{
-   margin-top: 5%;
-   margin-bottom: 2%;
-   width: 100%;
-   height: 100%;
-  }/*End of middle conaitners*/
+/*End of middle conaitners*/
   .footer-container{
     display: flex;
     flex-grow: 1
